@@ -1,0 +1,20 @@
+<div class="search-wr">
+<input type="search" placeholder="for example: Pirates of the Caribbean" (click)="log(fs.memory)" (keyup)="getFilms(search.value, 1)" #search>
+  <img src="assets/img/search1.svg" alt="">
+</div>
+<div class="film-container">
+
+ <ng-container *ngFor="let film of fs.films">
+   <a routerLink="{{film.imdbID}}">
+<app-film [title]="film.Title" [poster]="film.Poster" [year]="film.Year" [type]="film.Type"> </app-film>
+   </a>
+ </ng-container>
+
+
+  <img *ngIf="fs.pages < 0.1" class="ilst" src="assets/img/ilst.svg" alt="">
+
+</div>
+
+<div *ngIf="fs.pages > 1" (click)="moreFilms(fs.memory); log(fs.memory)" class="pag">
+  Show more
+</div>

@@ -1,0 +1,60 @@
+.wr {
+
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+  justify-content: center;
+
+}
+
+.cont {
+  margin-top: 80px;
+  width: 400px;
+  margin-bottom: 80px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 3px 6px -3px rgba(0,0,0,0.2);
+}
+
+
+a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  background-color: #FF7880;
+  margin: 40px;
+  text-align: center;
+
+}
+
+
+a:hover {
+  background-color: #F17078;
+}
+
+
+.contact-form {
+  min-width: 150px;
+  max-width: 500px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 40px;
+}
+
+.contact-full-width {
+  width: 100%;
+}
+
+h1  {
+  font-size: 24px;
+  font-weight: 200;
+  margin-left: 10%;
+  margin-top: 40px;
+}
+
+
+.mat-input-underline{
+  border-bottom: 1px solid red!important;
+}

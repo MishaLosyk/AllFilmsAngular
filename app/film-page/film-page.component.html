@@ -1,0 +1,22 @@
+<a (click)="comeBack()">← &nbsp; back</a>
+<article>
+<img src="{{poster}}" alt="">
+<div class="desc">
+
+<h1>{{title}}</h1>
+  <div class="sp"> <span class="subtitle">Year:</span><p> {{year}}</p> </div>
+  <div class="sp"> <span class="subtitle">Country:</span><p> {{country}}</p> </div>
+  <div class="sp"> <span class="subtitle">Genre:</span><p> {{genre}}</p> </div>
+  <div class="sp" *ngIf="check(director)"> <span class="subtitle">Director:</span><p> {{director}}</p> </div>
+  <!--<div class="sp"> <span class="subtitle">Writer:</span><p> {{writer}}</p> </div>-->
+  <div class="sp" *ngIf="check(actors)"> <span class="subtitle">Actors:</span><p> {{actors}}</p> </div>
+  <div class="sp" *ngIf="check(awards)"> <span class="subtitle">Awards:</span><p> {{awards}}</p> </div>
+  <div class="sp"> <span class="subtitle">Plot:</span><p> {{plot}}</p> </div>
+
+<div class="rate-wr"><span class="subtitle2">IMDb</span> <span class="rate">{{imdbRating}}</span></div>
+<div class="rate-wr" *ngIf="check(Metascore)"><span class="subtitle2">Metascore</span> <span class="rate">{{Metascore}}</span></div>
+<div *ngIf="check(BoxOffice)" class="rate-wr-box"><span class="subtitle2">BoxOffice</span> <span class="rate">{{BoxOffice}}</span></div>
+
+
+</div>
+</article>
